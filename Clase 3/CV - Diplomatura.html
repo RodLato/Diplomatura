@@ -1,0 +1,53 @@
+<html>
+
+	<head>
+		<title> CV de Rodrigo Lato </title>
+		<script>
+			function formSuccess(){
+				return alert("Gracias - Nos estaremos contactando");
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1>RODRIGO LATO</h1>
+		<img src="Rod.jpg">
+		<h2>Edad: 32 años</h2>
+		<h2>Domicilio: Wenceslao de Tata 4610, Caseros, Buenos Aires, Argentina</h2>
+		<h3>Qué series me gustan?</h3>
+		<ol>
+			<li>Vikings</li>
+			<li>The last kingdom</li>
+		</ol>
+		<h3>Qué pelis son las que más me gustaron?</h3>
+		<ol>
+			<li>John Wick</li>
+			<li>Resident Evil</li>
+		</ol>
+		<h3>Perfil</h3>
+		<p>Me gusta dormir</p>
+		<p>Soy y seré gamer</p>
+		<p>Odio trabajar</p>
+		<h3>Si querés contactarme podes completar el siguiente <a href="https://docs.google.com/forms/d/e/1FAIpQLScjIM7SVcMhz14cXP7NhfF38ZRIAumzxXomAtHtDFEtyZNuSA/viewform" target=_blank>formulario</a></h3>
+		<h3> O bien llenar tus datos debajo: </h3>
+		<form>
+			<p>
+				<label for="name"> Nombre </label>
+				<input id="name" type="text">
+			</p>
+			<p>
+				<label for="surname"> Apellido </label>
+				<input id="surname" type="text">
+			</p>
+			<p>
+				<label for="contact"> E-mail </label>
+				<input id="contact" type="text">
+			</p>
+			<p>
+				<input onClick="formSuccess()" type="submit">
+			</p>
+
+		</form>
+	</body>
+
+</html>
