@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="CV - Diplomatura.css">
 		<script>
 			function formSuccess(){
-				return alert("Gracias - Nos estaremos contactando");
+				var action = document.getElementById("gracias").style.display = "inline";
 			}
 		</script>
 	</head>
@@ -45,10 +45,10 @@
 					<label for="contact"> E-mail </label>
 					<input id="contact" type="text">
 				</p>
+				<p id="gracias"> Gracias - Nos estaremos contactando </p>
 				<p>
-					<input onClick="formSuccess()" type="submit">
+					<input onClick="formSuccess()" type="button" value="Submit"> 
 				</p>
-
 			</form>
 		</div>
 	</body>
