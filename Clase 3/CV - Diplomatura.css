@@ -45,3 +45,7 @@ form{
 	color: white;
 	padding: 5px 0px 5px 5px;
 }
+#gracias{
+	display: none;
+	color: green;
+}
