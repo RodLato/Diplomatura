@@ -1,0 +1,97 @@
+body{
+	/*background-image: url("dark-background-7.jpg");*/
+	/*background-image: radial-gradient(black, grey, black);*/
+	background-color: #F4F2F3;
+
+}
+.content-center{
+	width: 1300px;
+	margin: auto;
+	background-color: #F4F2F3;
+	border: 1px solid black;
+}
+
+.first{
+	width: 32%;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #94A7AE;
+	box-shadow: 10px 5px 16px 0px rgba(0,0,0,0.75);
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 0.65%;
+	margin-bottom: 15px;
+}
+
+.inside{
+	margin: 5px;
+	text-align: left;
+	padding-left: 5px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #64766A;
+	color: white;
+}
+h1{
+	margin: auto;
+	text-align: center;
+	background-color: #C0A9BD;
+	color: black;
+	padding: 5px 0px 5px 5px;
+	border-bottom: 1px solid black;
+}
+#changeColor{
+	float: left;
+	color: white;
+	background-color: #C0A9BD;
+}
+#kill{
+	float: right;
+	color: black;
+	background-color: red;
+}
+#revive{
+	float: right;
+	color: black;
+	background-color: green;
+	visibility: hidden;
+}
+
+img{
+	width: 50%;
+	margin-left: 25%;
+	float: none;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+img:hover{
+	/*border: 1px dotted #94A7AE;
+	margin-left: 24.93%;*/
+	box-shadow: 1px -1px 10px 3px rgba(0,0,0,1);
+}
+
+form{
+	margin: auto;
+	text-align: center;
+}
+.contacto{
+	margin: auto;
+	text-align: center;
+	background-color: #C0A9BD;
+	color: black;
+	padding: 5px 0px 5px 5px;
+	border-top: 1px solid black;
+}
+.contacto2{
+	margin: auto;
+	text-align: center;
+	background-color: #C0A9BD;
+	color: black;
+	padding: 5px 0px 5px 5px;
+	border-bottom: 1px solid black;
+}
+#gracias{
+	display: none;
+	color: green;
+}

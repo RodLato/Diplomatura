@@ -1,0 +1,110 @@
+<html>
+
+	<head>
+		<title> CV de Rodrigo Lato </title>
+		<link rel="stylesheet" href="CV - Diplomatura.css">
+		<script>
+			function formSuccess(){
+				var action = document.getElementById("gracias").style.display = "inline";
+			}
+			function changePalette(){
+				var changeBody = document.body.style.backgroundColor = "#B3DEE5";
+				var changeH1 = document.getElementsByTagName("H1")[0].style.backgroundColor = "#31525B";
+				var changeH1Color = document.getElementsByTagName("H1")[0].style.color = "white";
+				var changeContentCenter = document.getElementsByClassName("content-center")[0].style.backgroundColor = "#B3DEE5";
+				var changeContentCenterBorder = document.getElementsByClassName("content-center")[0].style.border = "1px solid #31525B";
+				var changeContentCenterText = document.getElementsByClassName("content-center")[0].style.color = "black";
+				var changeBox = document.getElementsByClassName("first")[0].style.backgroundColor = "#FAE6B1";
+				var changeBox = document.getElementsByClassName("first")[1].style.backgroundColor = "#FAE6B1";
+				var changeBox = document.getElementsByClassName("first")[2].style.backgroundColor = "#FAE6B1";
+				var changeInsideBox = document.getElementsByClassName("inside")[0].style.backgroundColor = "#31525B";
+				var changeInsideBox = document.getElementsByClassName("inside")[1].style.backgroundColor = "#31525B";
+				var changeInsideBox = document.getElementsByClassName("inside")[2].style.backgroundColor = "#31525B";
+				var changeInsideBoxText = document.getElementsByClassName("inside")[0].style.color = "white";
+				var changeInsideBoxText = document.getElementsByClassName("inside")[1].style.color = "white";
+				var changeInsideBoxText = document.getElementsByClassName("inside")[2].style.color = "white";
+				var changeContacto = document.getElementsByClassName("contacto")[0].style.backgroundColor = "#31525B";
+				var changeContacto2 = document.getElementsByClassName("contacto2")[0].style.backgroundColor = "#31525B";
+				var changeContacto = document.getElementsByClassName("contacto")[0].style.color = "white";
+				var changeContacto2 = document.getElementsByClassName("contacto2")[0].style.color = "white";
+				var changeFormTextColor = document.getElementById("formularioText").style.color = "#FAE6B1";
+			}
+			function kill(){
+				var kill = document.getElementsByClassName("all")[0].style.visibility = "hidden";
+				var reviveButton = document.getElementById("revive").style.visibility = "visible";
+			}
+			function revive(){
+				var revive = document.getElementsByClassName("all")[0].style.visibility = "visible";
+				var reviveButton = document.getElementById("revive").style.visibility = "hidden";
+			}
+		</script>
+	</head>
+	<body>
+		<button onClick="revive()" id="revive">Revive</button>
+		<div class="all">
+			<button onClick="changePalette()" id="changeColor">Change palette</button>
+			<button onClick="kill()" id="kill">Kill</button>
+			
+			<div class="content-center">
+				<h1>RODRIGO LATO</h1>
+				<img src="Rod.jpg">
+				<div class="all">
+					<div class="first">
+						<h2>Información Personal</h2>
+						<div class="inside">
+							<h3>Edad: 32 años</h3>
+							<h3>Domicilio: Wenceslao de Tata 4610, Caseros, Buenos Aires, Argentina</h3>
+						</div>
+					</div>
+					<div class="first">
+						<h2>Intereses</h2>
+						<div class="inside">
+							<h3>Qué series me gustan?</h3>
+							<ol>
+								<li>Vikings</li>
+								<li>The last kingdom</li>
+							</ol>
+							<h3>Qué pelis son las que más me gustaron?</h3>
+							<ol>
+								<li>John Wick</li>
+								<li>Resident Evil</li>
+							</ol>
+						</div>
+					</div>
+					<div class="first">
+						<h3>Perfil</h3>
+						<div class="inside">
+							<p>Me gusta dormir</p>
+							<p>Soy y seré gamer</p>
+							<p>Odio trabajar</p>
+						</div>
+					</div>
+				</div>
+				<div class="last">
+					<h3 class="contacto">Si querés contactarme podes completar el siguiente <a href="https://docs.google.com/forms/d/e/1FAIpQLScjIM7SVcMhz14cXP7NhfF38ZRIAumzxXomAtHtDFEtyZNuSA/viewform" target=_blank id="formularioText">formulario</a></h3>
+					<h3 class="contacto2"> O bien dejar tus datos debajo: </h3>
+				</div>
+					<form>
+						<p>
+							<label for="name"> Nombre </label>
+							<input id="name" type="text">
+						</p>
+						<p>
+							<label for="surname"> Apellido </label>
+							<input id="surname" type="text">
+						</p>
+						<p>
+							<label for="contact"> E-mail </label>
+							<input id="contact" type="text">
+						</p>
+						<p id="gracias"> Gracias - Nos estaremos contactando </p>
+						<p>
+							<input onClick="formSuccess()" type="button" value="Submit"> 
+						</p>
+					</form>
+				
+			</div>
+		</div>
+	</body>
+
+</html>
