@@ -22,6 +22,10 @@ body{
 	border-radius: 20px;
 	color: black;
 }
+.buttonTop:hover{
+	cursor: pointer;
+	background-color: DarkRed;
+}
 .content{
 	display: flex;
 	justify-content: space-between;
