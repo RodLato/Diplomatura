@@ -67,15 +67,22 @@ nav{
 section{
 	display: inline-block;
 	width: 100%;
-	margin: 0;
-	padding: 13.5px 0px 13.5px 0px;
+	margin: 0 auto;
+	padding: 13.5px 0px 13.5px 10px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
 aside{
 	display: inline-block;
 	width: 100%;
+	margin: 0 auto;
 	padding: 12px 0px 12px 0px;
+}
+aside p{
+	padding-left: 10px;
+}
+aside h2{
+	padding-left: 10px;
 }
 
 
