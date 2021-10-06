@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	color: #000;
+	background: #332F29;
+	font-size:100%;
+}
+#contenedor {
+	width: 800px;
+	background: #8FA68E;
+	margin-right:auto;
+	margin-left:auto;
+	overflow: hidden;
+}
+nav {
+	background: #CC3910;
+	float: left;
+	width: 160px;
+}
+ul {
+	list-style-type:none;
+}
+a {
+	color:#F1F2C0;
+	text-decoration: none;
+}
+section {
+	background: #F1F2C0;
+	float: left;
+	margin: 0 0 0 25px;
+	width: 400px;
+}
+aside {
+	background: #CCC59E;
+	float: right;
+	width: 190px;
+}
+
+@media screen and (max-width: 800px){
+h1{
+	margin: 0px;
+	margin-bottom: 20px;
+}
+
+body{
+	margin: 0px;
+}
+
+#contenedor{
+	width:100%;
+}
+ul{
+	margin: 0px;
+}
+li{
+	padding: 8px;
+}
+a{
+	color: black;
+}
+nav{
+	display: inline-block;
+	width: 100%;
+	background-color: #ffb347;
+}
+section{
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 13.5px 0px 13.5px 0px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+aside{
+	display: inline-block;
+	width: 100%;
+	padding: 12px 0px 12px 0px;
+}
+
+
+}
