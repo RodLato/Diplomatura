@@ -1,0 +1,275 @@
+<html>
+<head>
+	<style>
+		.cuadrado:hover{
+			cursor: pointer;
+		}
+		#cuadrado1{
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+		}
+		#cuadrado2{
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			border: 1px solid black;
+		}
+		#cuadrado3{
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			background-color: black;
+			border: 1px solid black;
+		}
+		#white:hover{
+			cursor: pointer;
+		}
+		.button{
+			display: inline-block;
+			border: 1px solid black; 
+			background-color: grey;
+			color: white;
+			padding: 2px;
+			vertical-align: top;
+			margin-top: 65px;
+		}
+		.button:hover{
+			cursor: pointer;
+		}
+		#text{
+			display: inline-block;
+			width: 500px;
+			height: 150px;
+		}
+		#alumno{
+			display: inline-block;
+			border: 1px dotted black;
+			padding: 0px 20px 0px 0px;
+		}
+		#alumno:hover{
+			cursor: pointer;
+			background-color: orange;
+		}
+		#nombres{
+			display: inline-block;
+			border: 1px dotted black;
+			padding: 2px;
+			text-align: center;
+		}
+		#nombres1{
+			display: inline-block;
+			border: 1px dotted black;
+			padding: 2px;
+			text-align: center;
+		}
+		#nombres2{
+			display: inline-block;
+			border: 1px dotted black;
+			padding: 2px;
+			text-align: center;
+		}
+		#nombres3{
+			display: inline-block;
+			border: 1px dotted black;
+			padding: 2px;
+			text-align: center;
+		}
+		#nombres4{
+			display: inline-block;
+			border: 1px dotted black;
+			padding: 2px;
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+<body>
+	<script>
+		function changeYellow(){
+			var x = document.body.style.backgroundColor = "yellow";
+			var x = document.body.style.color = "black";
+			var x = document.getElementById("cuadrado1").style.border = "1px solid red";
+		}
+		function changeLightBlue(){
+			var x = document.body.style.backgroundColor = "lightblue";
+			var x = document.body.style.color = "black";
+			var x = document.getElementById("cuadrado2").style.border = "1px solid red";
+		}
+		function changeBlack(){
+			var x = document.body.style.backgroundColor = "black";
+			var x = document.body.style.color = "white";
+			var x = document.getElementById("cuadrado3").style.border = "1px solid red";
+		}
+		function backToWhite(){
+			var x = document.body.style.backgroundColor = "white";
+			var x = document.body.style.color = "black";
+			var x = document.getElementById("cuadrado1").style.border = "1px solid black";
+			var x = document.getElementById("cuadrado2").style.border = "1px solid black";
+			var x = document.getElementById("cuadrado3").style.border = "1px solid black";
+		}
+
+	</script>
+	<script>
+		
+		function count(){
+			var x = document.getElementById("text").value.length;
+			var y = document.getElementById("count").innerText = x;
+		}
+
+	</script>
+
+	<script>
+		function alumnos(){
+
+		var alumnos = [
+
+  {
+
+    nombre: 'Juan Gomez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Pedro Rodriguez',
+
+    nota: 4
+
+  }, {
+
+    nombre: 'Roxana García',
+
+    nota: 8
+
+  }, {
+
+    nombre: 'Luciano Lopez',
+
+    nota: 5
+
+  }, {
+
+    nombre: 'Fernanda Gimenez',
+
+    nota: 6
+
+  }, {
+
+    nombre: 'Florencia Martinez',
+
+    nota: 10
+
+  }, {
+
+    nombre: 'Raul Sanchez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Sandra Figueroa',
+
+    nota: 8
+
+  }
+
+];
+
+var aprobados = alumnos.filter(num => num.nota >= 7);
+
+var j = document.getElementById("nombres").innerText = aprobados[0].nombre;
+var j = document.getElementById("nombres").style.display = "inline-block";
+var j = document.getElementById("nombres1").innerText = aprobados[1].nombre;
+var j = document.getElementById("nombres1").style.display = "inline-block";
+var j = document.getElementById("nombres2").innerText = aprobados[2].nombre;
+var j = document.getElementById("nombres2").style.display = "inline-block";
+var j = document.getElementById("nombres3").innerText = aprobados[3].nombre;
+var j = document.getElementById("nombres3").style.display = "inline-block";
+var j = document.getElementById("nombres4").innerText = aprobados[4].nombre;
+var j = document.getElementById("nombres4").style.display = "inline-block";
+
+}
+
+	</script>
+
+
+	<h1>Ejercicios</h1>
+	<h2>Crear un documento html con 3 cuadrados que, al ser clickeados, cambien el color de fondo del documento. Cada cuadrado debera tener un color distinto.</h2>
+	<div onclick="changeYellow()" class="cuadrado" id="cuadrado1"></div>
+	<div onclick="changeLightBlue()" class="cuadrado" id="cuadrado2"></div>
+	<div onclick="changeBlack()" class="cuadrado" id="cuadrado3"></div>
+	<p onclick="backToWhite()" id="white"> Back to white </p>
+
+	
+	<h2>Programar un contador de caracteres para un textarea.</h2>
+	
+	<p>A llenar</p>
+	<textarea id="text"></textarea>
+	<span onclick="count()" class="button">Contar</span>
+	<p> La cantidad de caracteres es: <span id="count"></span></p>
+
+	<h2>Array de alumnos aprobados. Se considera aprobado todo alumno que tenga una nota mayor o igual a 7.</h2>
+	<div id="alumno">
+		<ul>
+			<li>Nombre: Juan Gomez</li>
+			<li>Nota: 7</li>
+		</ul>
+	</div>
+	<div id="alumno">
+		<ul>
+			<li>Nombre: Pedro Rodriguez</li>
+			<li>Nota: 4</li>
+		</ul>
+	</div>
+	<div id="alumno">
+		<ul>
+			<li>Nombre: Roxana García</li>
+			<li>Nota: 8</li>
+		</ul>
+	</div>
+	<div id="alumno">
+		<ul>
+			<li>Nombre: Luciano Lopez</li>
+			<li>Nota: 5</li>
+		</ul>
+	</div>
+	<div id="alumno">
+		<ul>
+			<li>Nombre: Fernanda Gimenez</li>
+			<li>Nota: 6</li>
+		</ul>
+	</div>
+	<div id="alumno">
+		<ul>
+			<li>Nombre: Florencia Martinez</li>
+			<li>Nota: 10</li>
+		</ul>
+	</div>
+	<div id="alumno">
+		<ul>
+			<li>Nombre: Raul Sanchez</li>
+			<li>Nota: 7</li>
+		</ul>
+	</div>
+	<div id="alumno">
+		<ul>
+			<li>Nombre: Sandra Figueroa</li>
+			<li>Nota: 8</li>
+		</ul>
+	</div>
+	<p class="button" onclick="alumnos()"> Quienes aprobaron? </p>
+	<p> Aprobaron: </p><br>
+	<span style="display: none" id="nombres"></span>
+	<span style="display: none" id="nombres1"></span>
+	<span style="display: none" id="nombres2"></span>
+	<span style="display: none" id="nombres3"></span>
+	<span style="display: none" id="nombres4"></span>
+
+
+</body>
+</html>
