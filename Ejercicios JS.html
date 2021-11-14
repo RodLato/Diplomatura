@@ -1,0 +1,95 @@
+<html>
+<head>
+	<style>
+		#button{
+			border: 1px solid black; 
+			background-color: grey;
+			color: white;
+			padding: 2px;
+		}
+		#button:hover{
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+	<script>
+		function transp(){
+			var str = document.getElementById("dist").value;
+			if(str < 0){
+				alert("Debe poner un numero positivo");
+			}
+			else if(str >= 0 && str <=1000){
+				var x = document.getElementById("transporte").innerText = "pie";
+			}
+			else if(str > 1000 && str <=10000){
+				var x = document.getElementById("transporte").innerText = "bicicleta";
+			}
+			else if(str > 10000 && str <=30000){
+				var x = document.getElementById("transporte").innerText = "colectivo";
+			}
+			else if(str > 30000 && str <=100000){
+				var x = document.getElementById("transporte").innerText = "auto";
+			}
+			else if(str > 100000){
+				var x = document.getElementById("transporte").innerText = "avión";
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		
+		function array(){
+			var num1 = Number(document.getElementById("num1").value);
+			var num2 = Number(document.getElementById("num2").value);
+			var num3 = Number(document.getElementById("num3").value);
+			var num4 = Number(document.getElementById("num4").value);
+			var num5 = Number(document.getElementById("num5").value);
+
+			var array = [num1,num2,num3,num4,num5];
+			var largest = 0;
+			for (i=0; i<=largest;i++){
+    			if (array[i]>largest) {
+        			var largest=array[i];
+    			}
+			}
+			var x = document.getElementById("alto").innerText = largest;
+		}
+
+	</script>
+
+	<h1>Ejercicios</h1>
+	<h2>Crear el código que dada una distancia determine el medio de transporte apropiado de acuerdo a las siguientes reglas:</h2>
+	<ul>
+		<li>0 a 1000 metros = pie</li>
+		<li>1000 a 10000 metros = bicicleta</li>
+		<li>10000 a 30000 metros = colectivo</li>
+		<li>30000 a 100000 metros = auto</li>
+		<li>+100000 = avion</li>
+	</ul>
+	<form>
+		<label for="distancia">Distancia</label>
+		<input id="dist" type="text" name="" placeholder="0">
+		<span id="button" onclick="transp()">Send </span>
+	</form>
+	<p> El transporte apropiado es: <span id="transporte"></span></p>
+	<h2>Crear el código que reciba como parámetro un array de números y devuelva el mayor</h2>
+	<form>
+		<label for="numeros">Numero 1</label>
+		<input id="num1" type="text" name="" placeholder="0">
+		<input id="num2" type="text" name="" placeholder="0">
+		<input id="num3" type="text" name="" placeholder="0">
+		<input id="num4" type="text" name="" placeholder="0">
+		<input id="num5" type="text" name="" placeholder="0">
+		<span id="button" onclick="array()">Send </span>
+		<p> El número más alto es <span id="alto"></span></p>
+	</form>
+
+
+
+
+
+
+
+</body>
+</html>
